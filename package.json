@@ -4,9 +4,41 @@
   "engines": {
     "node": ">=16.x"
   },
+  "bin": {
+    "md-links": "./src/cli.js"
+  },
   "bootcamp": {
     "createdAt": "2023-09-20T11:50:43.165Z",
     "version": "6.2.0",
     "commit": "a5360f78b634be4f14eaea996ee4c7afc85a2f48"
+  },
+  "description": "A project for extracting and validating links in Markdown files",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "lint": "npx eslint .",
+    "test": "jest --coverage"
+  },
+  "keywords": [
+    "md-links",
+    "Markdown",
+    "links",
+    "validation",
+    "Node.js"
+  ],
+  "author": "Thayna Janciauskas",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/preset-env": "^7.23.5",
+    "eslint": "^8.50.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.28.1",
+    "jest": "^29.7.0"
+  },
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "md-links": "^0.1.0"
   }
 }
